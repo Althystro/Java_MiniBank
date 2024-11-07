@@ -28,11 +28,11 @@ public class BankAccount {
                 transactionHistory.add(new Transaction(date, "Deposit",depositBalance));
                 setBalance(depositBalance);
 }
-
+//
     public void withdrawal(double amount) {
         double currentBalance = getBalance();
         if (amount > currentBalance) {
-            System.out.println("Error: Insufficient balance. The balance cannot go below 0.");
+            System.out.println("Error:The balance cannot go below 0");
         } else {
             double newBalance = currentBalance - amount;
             setBalance(newBalance);
